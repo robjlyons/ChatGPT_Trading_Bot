@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def download_notebook():
     # Define the Google Drive download URL
-    download_url = 'https://drive.google.com/uc?id=1D2WfRcEjou6aJG6DxFAlo_gmVmzeH8vj&export=download'
+    download_url = 'https://drive.google.com/file/d/1D2WfRcEjou6aJG6DxFAlo_gmVmzeH8vj/view?usp=drive_link'
     output = '/tmp/tradingBot.ipynb'  # Use /tmp for temporary storage in serverless functions
 
     try:
